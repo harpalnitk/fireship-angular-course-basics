@@ -1,0 +1,8 @@
+<div *ngFor="let boat of boats">
+    <!-- boat is a dumb component used only for presentation of data -->
+<app-boat [boat]="boat"></app-boat>
+</div>
+
+<div *ngFor="let boat of boatsObservable | async">
+    <app-boat [boat]="boat"></app-boat>
+</div>
